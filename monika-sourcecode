@@ -1,10 +1,11 @@
 #prompt user for pollution levels 
-Pm25=float(input("Enter pm2.5 levels (in micrograms per cubic meter):))
-Pm10=float(input("Enter pm10 levels (in micrograms per cubic meter):))
-no2=float (input ("Enter No2 levels (in micrograms per cubic meter):))
-SO2=float (input ("Enter SO2 levels (in micrograms per cubic meter):))
-Co=float ( input ("Enter co levels (in micrograms per cubic meter):))
-O3=float ( input ("Enter O3 levels ( in micrograms per cubic meter):))
+pm25=float(input("Enter PM22 levels (in micrograms per cubic meter):))
+pm10=float(input("Enter PM10 levels (in micrograms per cubic meter):))
+no2=float (input ("Enter NO2 levels (in parts per million):))
+So2=float (input ("Enter SO2 levels (in parts per billion):))
+co=float ( input ("Enter CO levels (in parts per billion):))
+o3=float ( input ("Enter O3 levels ( in parts per million ):))
+
 # calculate air quality index (AQI)
 pm25_aqi=(pm/12)*100
 Pm10_aqi=(pm/16)*100
@@ -12,7 +13,9 @@ No2_aqi=(no/400)*100
 So2_aqi=(SO2/500)*100
 Co_aqi=(co/9)*100
 O3_aqi=(O3/125)*100
+
 #find the overall AQI
-aqi=max(pm25_aqi, pm10_aqi, no2_aqi, so2_aqi, co_aqi, o3_aqi)
+aqi=max(pm25_aqi, pm10_aqi, no2_aqi, so2_aqi, co_aqi, o3_aqi)
+
 #display AQI to the user
-Print ("Air Quality Index (AQI) ( aqi)")
+Print ("Air Quality Index (AQI) ( aqi)")
